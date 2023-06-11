@@ -1,0 +1,672 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+@import url(https://fonts.googleapis.com/css?family=Cormorant+Upright);
+
+*{
+    box-sizing: border-box;
+    font-family: Cormorant Upright;
+}
+
+:root{
+    --blue1: #1C5494;
+    --blue2: #1C5495;
+    --dark_blue: #405A78;
+    --grey: #DFDFDF;
+    --grey2: #D9D9D9;
+    --dark_grey: #848484;
+    --black: #000000;
+    --white: #FFFFFF;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 2560px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav{
+    height: 75px;
+    width: 100%;
+    max-width: 2560px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--blue1);
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+nav .navPart{
+    display: flex;
+}
+
+nav .navPart .hamburgerButton{
+    display: none;
+    background-color: inherit;
+    border: inherit;
+    color: white;
+    font-size: 30px;
+}
+
+nav .navPart .logo .logoTitle{
+    font-family: Playfair Display;
+    font-weight: 400;
+    color: var(--white);
+}
+
+nav .navigation ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav .navigation ul li{
+    margin-right: 30px;
+    font-size: 28px;
+}
+
+nav .navigation ul li a{
+    text-decoration: none;
+    color: var(--white);
+    transition: color 0.5s;
+}
+
+nav .navigation ul li a:hover{
+    color: var(--grey2);
+}
+
+header{
+    height: 675px;
+    display: flex;
+    margin-top: 75px;
+}
+
+header .heroImageBox{
+    width: 50vw;
+    height: 100%;
+    background-color: var(--grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+header .heroImageBox .heroImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*display: block;
+    margin-left: auto;
+    margin-right: auto;*/
+}
+
+header .headerTextBox{
+    width: 50vw;
+    height: 100%;
+    background-color: var(--dark_blue);
+    padding: 30px;
+}
+
+header .headerTextBox h2, p{
+    color: var(--white);
+}
+
+header .headerTextBox h2{
+    font-family: Playfair Display;
+    font-size: 80px;
+    font-weight: 400;
+    margin-top: 0px;
+}
+
+header .headerTextBox p{
+    font-size: 32px;
+}
+
+header .headerTextBox .infoButton{
+    font-size: 32px;
+    background-color: inherit;
+    border: 1px solid var(--white);
+    cursor: pointer;
+    color: var(--white);
+    transition: all 0.7s;
+}
+
+header .headerTextBox .infoButton:hover{
+    background-color: var(--white);
+    color: var(--dark_blue);
+}
+
+.routeSection{
+    padding-top: 10px;
+}
+
+.routeSection h2{
+    font-family: Playfair Display;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.routeSection .cityBox{
+    display: flex;
+    height: 350px;
+}
+
+.routeSection .cityBox.longerHeight{
+    height: 450px;
+}
+
+.routeSection .cityBox.reversed{
+    flex-direction: row-reverse;
+}
+
+.routeSection .cityBox .cityImageBox{
+    width: 25vw;
+    height: 100%;
+    background-color: var(--grey);
+}
+
+.routeSection .cityBox .cityImageBox .cityImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.routeSection .cityBox .cityTextBox{
+    width: 75vw;
+    height: 100%;
+    padding: 30px;
+}
+
+.routeSection .cityImageBox.halfWidth,
+.routeSection .cityTextBox.halfWidth{
+    width: 50vw;
+}
+
+.routeSection .cityBox .cityTextBox.color1{
+    background-color: var(--blue2);
+}
+
+.routeSection .cityBox .cityTextBox.color2{
+    background-color: var(--blue1);
+}
+
+.routeSection .cityBox .cityTextBox.color3{
+    background-color: var(--dark_grey);
+}
+
+.routeSection .cityBox .cityTextBox.color4{
+    background-color: var(--dark_grey);
+}
+
+.routeSection .cityBox h3, h4{
+    font-family: Playfair Display;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    color: var(--white);
+}
+
+.routeSection .cityBox h3{
+    font-size: 80px;
+}
+
+.routeSection .cityBox h4{
+    font-size: 44px;
+}
+
+.routeSection .cityBox p{
+    margin-top: 0px;
+    font-size: 32px;
+    line-height: 1.3;
+}
+
+.routeSection .cityBox .smallText{
+    font-size: 24px;
+}
+
+.mapSection{
+    padding-top: 10px;
+}
+
+.mapSection h2{
+    font-family: Playfair Display;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.mapSection .latvianMap{
+    width: 100%;
+    object-fit: cover;
+    height: 900px;
+}
+
+.formSection{
+    height: 760px;
+    display: flex;
+    margin-top: -5px;
+}
+
+.formSection .formInfoBox{
+    width: 50%;
+    height: 100%;
+    background-color: var(--dark_blue);
+    padding: 30px;
+}
+
+.formSection .formInfoBox h2, p{
+    color: var(--white);
+}
+
+.formSection .formInfoBox h2{
+    font-family: Playfair Display;
+    font-weight: 500;
+    font-size: 80px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.formSection .formInfoBox p{
+    font-size: 40px;
+}
+
+.formSection .formBox{
+    width: 50%;
+    height: 100%;
+    background-color: var(--grey2);
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formSection .formBox form{
+    text-align: center;
+}
+
+.formSection .formBox form label{
+    font-size: 24px;
+}
+
+.formSection .formBox form .inputField, .textareaField{
+    width: 40vw;
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
+.formSection .formBox form .textareaField{
+    height: 300px;
+    resize: none;
+}
+
+.formSection .formBox form .warningText{
+    margin-top: 5px;
+    color: red;
+    font-weight: 600;
+}
+
+.formSection .formBox form .submitButton{
+    width: 150px;
+    padding: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background-color: var(--dark_grey);
+    font-size: 20px;
+    box-shadow: none;
+}
+
+footer{
+    padding: 0px;
+}
+
+footer .footerText{
+    font-family: Playfair Display;
+    font-size: 40px;
+    text-align: center;
+    color: var(--black);
+}
+
+/* Vietu lapām */
+
+.gallerySection h2{
+    font-family: Playfair Display;
+    font-weight: 500;
+    font-size: 48px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.gallerySection .galleryBox{
+    background-color: var(--grey2);
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.gallerySection .galleryBox .mainPart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.gallerySection .galleryBox .mainPart .galleryImage{
+    height: 600px;
+    display: block;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+.gallerySection .galleryBox .mainPart .galleryImage.hidden{
+    display: none;
+}
+
+.factsSection h2{
+    font-family: Playfair Display;
+    font-weight: 500;
+    font-size: 48px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+@keyframes fadeIn{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.gallerySection .galleryBox .numberPart .imageNumber{
+    color: var(--black);
+    font-size: 24px;
+    text-align: center;
+}
+
+.gallerySection .galleryBox .mainPart .changeImageButton{
+    font-size: 24px;
+    background-color: inherit;
+}
+
+.factsSection .factBox{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.factsSection .factBox.reversed{
+    flex-direction: row-reverse;
+}
+
+.factsSection .factBox .factNumberBox{
+    width: 10vw;
+    background-color: var(--blue1);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.factsSection .factBox .factNumberBox h4{
+    font-size: 110px;
+    color: var(--white);
+}
+
+.factsSection .factBox .factTextBox{
+    background-color: var(--grey2);
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.factsSection .factBox .factTextBox p{
+    font-size: 32px;
+    color: var(--black);
+}
+
+@media screen and (max-width: 959px) {
+    nav{
+        flex-direction: column;
+    }
+
+    nav .navPart{
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    nav .navPart .hamburgerButton{
+        display: block;
+    }
+
+    nav .navigation{
+        background-color: var(--dark_blue);
+        width: 110%;
+        display: none;
+    }
+
+    nav .navigation.shown{
+        display: block;
+    }
+
+    nav .navigation ul{
+        flex-direction: column;
+        background-color: var(--dark_blue);
+        overflow-y: auto;
+    }
+
+    nav .navigation ul li{
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
+
+    header{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    header .headerTextBox{
+        width: 100%;
+    }
+
+    header .heroImageBox{
+        width: 100%;
+    }
+
+    /*header .headerTextBox h2{
+        font-size: 60px;
+    }*/
+
+    .routeSection .cityTextBox p{
+        font-size: 28px;
+    }
+
+    .routeSection .cityBox.longerHeight,
+    .routeSection .cityBox.longerHeight.reversed{
+        flex-direction: column-reverse;
+        height: auto;
+        margin-top: -5px;
+    }
+
+    .routeSection .cityBox.longerHeight .cityImageBox,
+    .routeSection .cityBox.longerHeight.reversed .cityImageBox,
+    .routeSection .cityBox.longerHeight .cityTextBox,
+    .routeSection .cityBox.longerHeight.reversed .cityTextBox{
+        width: 100%;
+    }
+
+    .mapSection .latvianMap{
+        height: 500px;
+    }
+
+    .formSection{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .formSection .formInfoBox{
+        width: 100%;
+    }
+
+    .formSection .formBox{
+        width: 100%;
+    }
+
+    .formSection .formBox form{
+        width: 100%;
+        text-align: center;
+    }
+
+    .formSection .formBox form label{
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .formSection .formBox form .inputField, .textareaField{
+        width: 100%;
+        padding: 4px;
+    }
+
+    .formSection .formBox form .submitButton{
+        font-size: 28px;
+    }
+
+    footer{
+        
+    }
+
+    footer .footerText{
+        font-size: 32px;
+    }
+
+    /* Vietu lapām */
+
+    .gallerySection .galleryBox{
+        height: auto;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .gallerySection .galleryBox .mainPart .galleryImage{
+        height: auto;
+        width: 100%;
+    }
+
+    .gallerySection .galleryBox .mainPart .changeImageButton{
+        position: absolute;
+        background-color: var(--grey2);
+        z-index: 1;
+    }
+
+    .gallerySection .galleryBox .mainPart .changeImageButton#changeImageBack{
+        left: 0;
+    }    
+
+    .gallerySection .galleryBox .mainPart .changeImageButton#changeImageNext{
+        right: 0;
+    }
+
+    .factsSection .factBox .factNumberBox{
+        width: 15vw;
+    }
+
+    .factsSection .factBox .factTextBox p{
+        font-size: 28px;
+    }
+
+}
+
+@media screen and (max-width: 539px){
+    header .headerTextBox .cityName{
+        font-size: 54px;
+    }
+
+    nav .navigation ul li{
+        font-size: 22px;
+        margin-top: 0px;
+    }
+
+    header .headerTextBox h2{
+        font-size: 36px;
+    }
+
+    header .headerTextBox p{
+        font-size: 24px;
+    }
+
+    .routeSection h2{
+        font-size: 36px;
+    }
+
+    .routeSection .cityBox,
+    .routeSection .cityBox.reversed{
+        flex-direction: column-reverse;
+        height: auto;
+        margin-top: -5px;
+    }
+
+    .routeSection .cityBox .cityImageBox,
+    .routeSection .cityBox .cityTextBox{
+        width: 100%;
+        height: auto;
+    }
+
+    .routeSection .cityBox .cityTextBox h3{
+        font-size: 36px;
+    }
+
+    .routeSection .cityBox .cityTextBox p{
+        font-size: 20px;
+    }
+
+    .mapSection h2{
+        font-size: 36px;
+    }
+
+    .mapSection .latvianMap{
+        height: 300px;
+        object-position: 100%;
+    }
+
+    .formSection .formInfoBox h2{
+        font-size: 36px;
+    }
+
+    .formSection .formInfoBox p{
+        font-size: 22px;
+    }
+
+    .formSection .formBox form label{
+        font-size: 22px;
+    }
+
+    footer .footerText{
+        font-size: 22px;
+    }
+
+    .gallerySection h2{
+        font-size: 36px;
+    }
+
+    .factsSection h2{
+        font-size: 36px;
+    }
+}
+
+
+
+
+
+
+
+
+

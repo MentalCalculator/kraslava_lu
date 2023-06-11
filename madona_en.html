@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madona (Kraslava - LU)</title>
+    <link href="../tim_diz_pamati_md/css/styles.css" rel="stylesheet"></link>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="navPart">
+            <div class="logo">
+                <h1 class="logoTitle">Kraslava - LU</h1>
+            </div>
+            <button class="hamburgerButton" id="hamburgerButton">☰</button>
+        </div>
+        <div class="navigation" id="navigation">
+            <ul>
+                <li><a href="../tim_diz_pamati_md/index_en.html">Home</a></li>
+                <li><a href="../tim_diz_pamati_md/kraslava_en.html">Kraslava</a></li>
+                <li><a href="../tim_diz_pamati_md/dridzis_en.html">Dridzis</a></li>
+                <li><a href="../tim_diz_pamati_md/aglona_en.html">Aglona</a></li>
+                <li><a href="../tim_diz_pamati_md/madona_en.html">Madona</a></li>
+                <li><a href="../tim_diz_pamati_md/ligatne_en.html">Ligatne</a></li>
+                <li><a href="../tim_diz_pamati_md/sigulda_en.html">Sigulda</a></li>
+                <li><a href="../tim_diz_pamati_md/riga_en.html">Riga</a></li>
+                <li><a href="../tim_diz_pamati_md/madona.html">LV</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="heroImageBox" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="../tim_diz_pamati_md/img/madona_1.jpg" alt="Daugava Krāslavā" class="heroImage"/>
+        </div>
+        <div class="headerTextBox" data-aos="zoom-in" data-aos-duration="1000">
+            <h2 class="cityName">Madona</h2>
+            <p>
+                Population: 6 715 (2022)<br>
+                Area: 10,4 km2<br>
+                Distance from Riga: 165 km<br>
+                Nationalities: 79% Latvians, 16% Russians, 1,8% Belarussians, 3,2% Others<br>
+                Nearest towns: Cesvaine, Gulbene, Varaklani
+            </p>
+            <button type="button" onclick="location.href='https://visitmadona.lv/en/'" class="infoButton">Get More Information</button>
+        </div>
+    </header>
+    <section class="routeSection">
+        <h2 data-aos="zoom-in">Sightseeing Objects</h2>
+        <div class="cityBox longerHeight">
+            <div class="cityImageBox halfWidth" data-aos="zoom-in-up" data-aos-duration="750">
+                <img src="../tim_diz_pamati_md/img/madona_4.jpg" alt="Krāslava" class="cityImage"/>
+            </div>
+            <div class="cityTextBox halfWidth color1" data-aos="zoom-in-up" data-aos-duration="500">
+                <h4>Madona House of Culture</h4>
+                <p class="smallText">
+                    The building was once constructed as a Guards house (architect V. Vitands), which was opened in 1935. The relief of a soldier (sculptor K. Zemdega) above the entrance still reminds of the needs of that time. At that time, the Madona Guards House was the largest new building in Latvia outside Riga.<br><br>
+
+                    Adrress: Raiņa iela 12, Madona
+                </p>
+            </div>
+        </div>
+        <div class="cityBox longerHeight reversed" data-aos="zoom-in-up" data-aos-duration="750">
+            <div class="cityImageBox halfWidth">
+                <img src="../tim_diz_pamati_md/img/madona_6.jpg" data-aos="zoom-in-up" alt="Drīdzis" class="cityImage"/>
+            </div>
+            <div class="cityTextBox halfWidth color2" data-aos-duration="500">
+                <h4>Madona Prayer Chapel</h4>
+                <p class="smallText">
+                    The chapel is included in the tourist guide of the city of Madona, confirming that any person, regardless of denominational affiliation and time of day, is welcome here.<br><br>
+
+                    Is located at the intersection of Raiņa and Blaumaņa streets.
+                </p>
+            </div>
+        </div>
+        <div class="cityBox longerHeight">
+            <div class="cityImageBox halfWidth" data-aos="zoom-in-up" data-aos-duration="750">
+                <img src="../tim_diz_pamati_md/img/madona_7.jpg" alt="Aglona" class="cityImage"/>
+            </div>
+            <div class="cityTextBox halfWidth color1" data-aos="zoom-in-up" data-aos-duration="500">
+                <h4>Saieta Square</h4>
+                <p class="smallText">
+                    The central square of Madona, which was a market square at the beginning of the 20th century. After extensive restoration, it has become a noteworthy urban object. On the northern side of the square are the city and county municipalities and Madona county TIC.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="gallerySection">
+        <h2 data-aos="zoom-in">Gallery</h2>
+        <div class="galleryBox" data-aos="zoom-in" data-aos-duration="600">
+            <div class="mainPart">
+                <button class="changeImageButton" id="changeImageBack">⬅</button>
+                <img src="../tim_diz_pamati_md/img/madona_2.jpg" alt="Madona 1" class="galleryImage"/>
+                <img src="../tim_diz_pamati_md/img/madona_3.jpg" alt="Madona 2" class="galleryImage hidden"/>
+                <img src="../tim_diz_pamati_md/img/madona_8.jpg" alt="Madona 3" class="galleryImage hidden"/>
+                <button class="changeImageButton" id="changeImageNext">➡</button>
+            </div>
+            <div class="numberPart">
+                <p class="imageNumber" id="imageNumber"></p>
+            </div>
+        </div>
+    </section>
+    <section class="factsSection">
+        <h2 data-aos="zoom-in">Interesting Facts</h2>
+        <div class="factBox" data-aos="zoom-in-up">
+            <div class="factNumberBox"><h4>1</h4></div>
+            <div class="factTextBox">
+                <p>Madona is one of the highest cities in Latvia (122 - 193 m above sea level), its terrain difference is 71 m. It can be clearly seen when walking along Raiņa Street.</p>
+            </div>
+        </div>
+        <div class="factBox reversed" data-aos="zoom-in-up">
+            <div class="factNumberBox"><h4>2</h4></div>
+            <div class="factTextBox">
+                <p>Madona is considered the winter capital, because the infrastructure of winter sports is developed in its surroundings, and the snow stays here the longest in spring.</p>
+            </div>
+        </div>
+        <div class="factBox" data-aos="zoom-in-up">
+            <div class="factNumberBox"><h4>3</h4></div>
+            <div class="factTextBox">
+                <p>The first art school in Latvia was estabilshed in Madona, in 1975.</p>
+            </div>
+        </div>
+        <div class="factBox reversed" data-aos="zoom-in-up">
+            <div class="factNumberBox"><h4>4</h4></div>
+            <div class="factTextBox">
+                <p>The monument dedicated to Rudolfs Blaumanis (Latvian writer) in front of the House of Culture is the heaviest object in the collection of the Madona Museum, besides, it is not located in the museum premises, but in the open air.
+                    It's interesting that the appearance of R. Blaumanis on the monument is compared to the character of the cartoon "The Simpsons" Ned Flanders.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p class="footerText">(C) 2023 Deniss Ozerskis. All rights reserved.</p>
+    </footer>
+    <script src="../tim_diz_pamati_md/js/app.js"></script>
+</body>
+</html>

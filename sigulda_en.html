@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigulda (Kraslava - LU)</title>
+    <link href="../tim_diz_pamati_md/css/styles.css" rel="stylesheet"></link>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="navPart">
+            <div class="logo">
+                <h1 class="logoTitle">Kraslava - LU</h1>
+            </div>
+            <button class="hamburgerButton" id="hamburgerButton">☰</button>
+        </div>
+        <div class="navigation" id="navigation">
+            <ul>
+                <li><a href="../tim_diz_pamati_md/index_en.html">Home</a></li>
+                <li><a href="../tim_diz_pamati_md/kraslava_en.html">Kraslava</a></li>
+                <li><a href="../tim_diz_pamati_md/dridzis_en.html">Dridzis</a></li>
+                <li><a href="../tim_diz_pamati_md/aglona_en.html">Aglona</a></li>
+                <li><a href="../tim_diz_pamati_md/madona_en.html">Madona</a></li>
+                <li><a href="../tim_diz_pamati_md/ligatne_en.html">Ligatne</a></li>
+                <li><a href="../tim_diz_pamati_md/sigulda_en.html">Sigulda</a></li>
+                <li><a href="../tim_diz_pamati_md/riga_en.html">Riga</a></li>
+                <li><a href="../tim_diz_pamati_md/sigulda.html">LV</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="heroImageBox" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="../tim_diz_pamati_md/img/sigulda_5.jpg" alt="Daugava Krāslavā" class="heroImage"/>
+        </div>
+        <div class="headerTextBox" data-aos="zoom-in" data-aos-duration="1000">
+            <h2 class="cityName">Sigulda</h2>
+            <p>
+                Population: 14 539 (2022)<br>
+                Area: 22,9 km2<br>
+                Distance from Riga: 53 km<br>
+                Nationalities: 90% Latvians, 6,6% Russians, 0,9% Belarussians, 2,5% Others<br>
+                Nearest towns: Vangazi, Ligatne, Cesis
+            </p>
+            <button type="button" onclick="location.href='https://tourism.sigulda.lv/en/'" class="infoButton">Get More Information</button>
+        </div>
+    </header>
+    <section class="routeSection">
+        <h2 data-aos="zoom-in">Sightseeing Objects</h2>
+        <div class="cityBox longerHeight">
+            <div class="cityImageBox halfWidth" data-aos="zoom-in-up" data-aos-duration="750">
+                <img src="../tim_diz_pamati_md/img/sigulda_1.jpg" alt="Krāslava" class="cityImage"/>
+            </div>
+            <div class="cityTextBox halfWidth color1" data-aos="zoom-in-up" data-aos-duration="500">
+                <h4>Gutman's Cave</h4>
+                <p class="smallText">
+                    The widest and highest cave in the Baltic countries, located by the Gauja River in the area known as the ancient Gauja valley in the Gauja National Park. 
+                    It started forming more than 10,000 years ago when meltwater eroded the sandstone rock after the Ice Age. It is the oldest tourist attraction in Latvia. On the walls of the cave are inscriptions from the 17th century. The legend of the Rose of Turaida began in this cave.
+                </p>
+            </div>
+        </div>
+        <div class="cityBox longerHeight reversed" data-aos="zoom-in-up" data-aos-duration="750">
+            <div class="cityImageBox halfWidth">
+                <img src="../tim_diz_pamati_md/img/sigulda_2.jpg" data-aos="zoom-in-up" alt="Drīdzis" class="cityImage"/>
+            </div>
+            <div class="cityTextBox halfWidth color2" data-aos-duration="500">
+                <h4>The Sanatorium of Krimulda</h4>
+                <p class="smallText">
+                    The Sanatorium of Krimulda was established in the building of the Krimulda Palace, which was built in 1848 for Prince Paul von Lieven. In the 30s of the 20th century, the mansard floor of the castle was built for the needs of the sanatorium, and a summer pavilion was built in front of the castle in a wooden structure. From the 20s-30s of the 20th century, there was a sanatorium in the palace, currently - the rehabilitation center "Krimulda".
+                </p>
+            </div>
+        </div>
+        <div class="cityBox longerHeight" data-aos="zoom-in-up" data-aos-duration="750">
+            <div class="cityImageBox halfWidth">
+                <img src="../tim_diz_pamati_md/img/sigulda_6.jpg" data-aos="zoom-in-up" alt="Drīdzis" class="cityImage"/>
+            </div>
+            <div class="cityTextBox halfWidth color1" data-aos-duration="500">
+                <h4>The Sigulda Park - a Part of Gauja National Park</h4>
+                <p class="smallText">
+                    Ideal place for autumn walkings and photo sessions. It is not for nothing that you can meet thousands of tourists there every October.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="gallerySection">
+        <h2 data-aos="zoom-in">Galerija</h2>
+        <div class="galleryBox" data-aos="zoom-in" data-aos-duration="600">
+            <div class="mainPart">
+                <button class="changeImageButton" id="changeImageBack">⬅</button>
+                <img src="../tim_diz_pamati_md/img/sigulda_3.jpg" alt="Līgatne 1" class="galleryImage"/>
+                <img src="../tim_diz_pamati_md/img/sigulda_4.jpg" alt="Līgatne 2" class="galleryImage hidden"/>
+                <img src="../tim_diz_pamati_md/img/sigulda_5.jpg" alt="Līgatne 3" class="galleryImage hidden"/>
+                <button class="changeImageButton" id="changeImageNext">➡</button>
+            </div>
+            <div class="numberPart">
+                <p class="imageNumber" id="imageNumber"></p>
+            </div>
+        </div>
+    </section>
+    <section class="factsSection">
+        <h2 data-aos="zoom-in">Interesting Facts</h2>
+        <div class="factBox" data-aos="zoom-in-up">
+            <div class="factNumberBox"><h4>1</h4></div>
+            <div class="factTextBox">
+                <p>Sigulda is on a picturesque stretch of the primeval Gauja river valley. Because of the reddish Devonian sandstone which forms steep rocks and caves on both banks of the river, Sigulda has been called the "Switzerland of Vidzeme". </p>
+            </div>
+        </div>
+        <div class="factBox reversed" data-aos="zoom-in-up">
+            <div class="factNumberBox"><h4>2</h4></div>
+            <div class="factTextBox">
+                <p>Supported by the town council, a traditional Opera Festival takes place in an open-air music hall in the castle ruins each summer. 
+                    A Town Festival is celebrated in May when cherry trees blossom, while Sigulda is known for the colors of its trees in autumn. Sports such as skiing, bobsledding, and the luge are popular in wintertime and bungee jumping is practiced during the rest of the year.</p>
+            </div>
+        </div>
+        <div class="factBox" data-aos="zoom-in-up">
+            <div class="factNumberBox"><h4>3</h4></div>
+            <div class="factTextBox">
+                <p>There are different versions of the origin of the place name "Sigulda". One of the most likely variants is the German name Segewold derived from Sieg + Wald, which means "victory forest" in Latvian and
+                    indicates the victory of the Crusaders and Zemgals in the battle with the Livs near the Satezel Castle in 1206.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p class="footerText">(C) 2023 Deniss Ozerskis. All rights reserved.</p>
+    </footer>
+    <script src="../tim_diz_pamati_md/js/app.js"></script>
+</body>
+</html>

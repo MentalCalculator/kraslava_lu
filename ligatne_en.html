@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ligatne (Kraslava - LU)</title>
+    <link href="../tim_diz_pamati_md/css/styles.css" rel="stylesheet"></link>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="navPart">
+            <div class="logo">
+                <h1 class="logoTitle">Kraslava - LU</h1>
+            </div>
+            <button class="hamburgerButton" id="hamburgerButton">☰</button>
+        </div>
+        <div class="navigation" id="navigation">
+            <ul>
+                <li><a href="../tim_diz_pamati_md/index_en.html">Home</a></li>
+                <li><a href="../tim_diz_pamati_md/kraslava_en.html">Kraslava</a></li>
+                <li><a href="../tim_diz_pamati_md/dridzis_en.html">Dridzis</a></li>
+                <li><a href="../tim_diz_pamati_md/aglona_en.html">Aglona</a></li>
+                <li><a href="../tim_diz_pamati_md/madona_en.html">Madona</a></li>
+                <li><a href="../tim_diz_pamati_md/ligatne_en.html">Ligatne</a></li>
+                <li><a href="../tim_diz_pamati_md/sigulda_en.html">Sigulda</a></li>
+                <li><a href="../tim_diz_pamati_md/riga_en.html">Riga</a></li>
+                <li><a href="../tim_diz_pamati_md/ligatne.html">LV</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="heroImageBox" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="../tim_diz_pamati_md/img/ligatne_1.jpg" alt="Daugava Krāslavā" class="heroImage"/>
+        </div>
+        <div class="headerTextBox" data-aos="zoom-in" data-aos-duration="1000">
+            <h2 class="cityName">Ligatne</h2>
+            <p>
+                Population: 1 011 (2022)<br>
+                Area: 7,1 km2<br>
+                Distance from Riga: 71 km<br>
+                Nearest towns: Sigulda, Cēsis, Vangaži
+            </p>
+            <button type="button" onclick="location.href='http://visitligatne.lv/aktualitates?lang=eng'" class="infoButton">Get More Information</button>
+        </div>
+    </header>
+    <section class="routeSection">
+        <h2 data-aos="zoom-in">Sightseeing Objects</h2>
+        <div class="cityBox longerHeight">
+            <div class="cityImageBox halfWidth" data-aos="zoom-in-up" data-aos-duration="750">
+                <img src="../tim_diz_pamati_md/img/ligatne_3.jpg" alt="Krāslava" class="cityImage"/>
+            </div>
+            <div class="cityTextBox halfWidth color1" data-aos="zoom-in-up" data-aos-duration="500">
+                <h4>Cellar Cave Rocks of Ligatne</h4>
+                <p class="smallText">
+                    Rocky sandstone rocks were formed when water currents carried sandy, clayey rock particles. They slowly settled and compacted, becoming mighty formations of nature! The cellar caves of Ligatne were created by the ancient inhabitants with their own hands.
+                </p>
+            </div>
+        </div>
+        <div class="cityBox longerHeight reversed" data-aos="zoom-in-up" data-aos-duration="750">
+            <div class="cityImageBox halfWidth">
+                <img src="../tim_diz_pamati_md/img/ligatne_6.jpg" data-aos="zoom-in-up" alt="Drīdzis" class="cityImage"/>
+            </div>
+            <div class="cityTextBox halfWidth color2" data-aos-duration="500">
+                <h4>Ligatne Paper Mill</h4>
+                <p class="smallText">
+                    The history of producing paper in Līgatne dates back to 1815 when the first sheets of paper were produced of old fabric rags. The Paper Mill golden time was the end of 19th century, when it was granted permission to produce so called tsar’s paper – paper with watermark of tsarist Russia’s two-headed eagle. Nowadays Līgatne Paper Mill factory is not working anymore, 
+                    but you have an opportunity to visit it with guide and see place, where paper were produced for almost 200 years.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="gallerySection">
+        <h2 data-aos="zoom-in">Gallery</h2>
+        <div class="galleryBox" data-aos="zoom-in" data-aos-duration="600">
+            <div class="mainPart">
+                <button class="changeImageButton" id="changeImageBack">⬅</button>
+                <img src="../tim_diz_pamati_md/img/ligatne_4.jpg" alt="Līgatne 1" class="galleryImage"/>
+                <img src="../tim_diz_pamati_md/img/ligatne_5.jpg" alt="Līgatne 2" class="galleryImage hidden"/>
+                <img src="../tim_diz_pamati_md/img/ligatne_7.jpg" alt="Līgatne 3" class="galleryImage hidden"/>
+                <button class="changeImageButton" id="changeImageNext">➡</button>
+            </div>
+            <div class="numberPart">
+                <p class="imageNumber" id="imageNumber"></p>
+            </div>
+        </div>
+    </section>
+    <section class="factsSection">
+        <h2 data-aos="zoom-in">Interesting Facts</h2>
+        <div class="factBox" data-aos="zoom-in-up">
+            <div class="factNumberBox"><h4>1</h4></div>
+            <div class="factTextBox">
+                <p>Ligatne is one of the oldest paper production centers in Latvia. Paper was produced here in 1815 in the Paltmale manor flour mill adapted for paper production, but the paper factory was built a little later.
+                    After the construction of the paper factory, Līgatne began to develop into a settlement, which acquired city rights in 1993.</p>
+            </div>
+        </div>
+        <div class="factBox reversed" data-aos="zoom-in-up">
+            <div class="factNumberBox"><h4>2</h4></div>
+            <div class="factTextBox">
+                <p>Ligatne is located in the territory of the Gauja National Park. Near Ligatne is the Ligatne Nature Trails - a forest massif with more than 5 km of tails and paths for pedestrians and cyclists, 
+                    as well as horse riding, where you can observe the wild animals and birds characteristic of the Latvian fauna in aviaries.</p>
+            </div>
+        </div>
+        <div class="factBox" data-aos="zoom-in-up">
+            <div class="factNumberBox"><h4>3</h4></div>
+            <div class="factTextBox">
+                <p>There are winding river coasts with sandstone outcrops and rock-cut caves in Ligatne. It's a city with an abundance of colors in nature – rich green forests and meadows, shimmering golden, gray and reddish rocks and bluish-gray flow of the river.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p class="footerText">(C) 2023 Deniss Ozerskis. All rights reserved.</p>
+    </footer>
+    <script src="../tim_diz_pamati_md/js/app.js"></script>
+</body>
+</html>
